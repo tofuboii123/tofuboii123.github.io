@@ -20,6 +20,14 @@ ID: 40100475
 			background-color: #fbe8a6;
 		}
 
+		fieldset.reserveInfo:hover {
+			background-color: #d9eff2;
+		}
+
+		fieldset.roomSpecs:hover {
+			background-color: #f8bca0;
+		}
+
 		fieldset.reserveInfo {
 			background-color: #b4dfe5;
 			border-style: solid;
@@ -74,7 +82,7 @@ ID: 40100475
 </head>
 
 <body>
-	<table>
+	<table class = "image">
 		<tr>
 			<td>
 				<a href = "https://i.kym-cdn.com/photos/images/original/001/410/982/9f6.png">
@@ -93,7 +101,8 @@ ID: 40100475
 				<input type = "number" 
 					   min = 1 
 					   max = 10 
-					   name = "numberOfRooms" />
+					   name = "numberOfRooms" 
+					   value = 1 />
 
 			<br/>
 			<br/>
@@ -111,11 +120,11 @@ ID: 40100475
 			<br/>
 			<br/>
 
-			<label class = "reserveInfo">Check-in (DD/MM/YY):</label>
+			<label class = "reserveInfo">Check-in:</label>
 				<input type = "date" name = "checkIn" size = 10>
 			<br/>
 			<br/>
-			<label class = "reserveInfo">Check-out (DD/MM/YY):</label>
+			<label class = "reserveInfo">Check-out:</label>
 				<input type = "date" name = "checkOut" size = 10>
 		</fieldset>
 
